@@ -1,7 +1,7 @@
 {
   "input": [
     {
-      "type": "ipinfoCountryMMDB",
+      "type": "maxmindMMDB",
       "action": "add",
       "args": {
         "uri": "https://github.com/xream/geoip/releases/latest/download/ipinfo.country.mmdb"
