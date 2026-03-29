@@ -35,10 +35,6 @@ jobs:
         run: |
           go build ./
           ./geoip convert -c ./config.json
-          for file in ./output/surge/*.txt; do
-            cat "$file" | ./geoip merge > "${file}.merged"
-            mv "${file}.merged" "$file"
-          done
 
       - name: Git push assets to "release" branch
         run: |
